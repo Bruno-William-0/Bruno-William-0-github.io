@@ -32,7 +32,7 @@ function cadastrarPet() {
 }
 
 function listareexcluir() {
-    fetch(`https://api-pets.onrender.com/pet/${localStorage.getItem('id')}`)
+    fetch(`https://api-pets.onrender.com/pet/}`)
         .then(response => response.json())
         .then(pets => {
             const tabela = document.createElement('table');
