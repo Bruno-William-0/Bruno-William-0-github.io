@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/cadastropets.css">
+  <script src="../js/crudPet.js"></script>
+  <title>Cadastro Pets</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+
+        <li><a href="banhoTosa.html">Banho e Tosa - Madame Pet</a></li>
+
+      </ul>
+
+      <hr>
+    </nav>
+
+    <h1>CADASTRO PETS</h1>
+  </header>
+
+  <div>
+    <div id="form">
+      <form>
+        <label>Nome</label>
+        <input type="Name" placeholder="Insira o Nome" name="nomePet"></input>
+        <label>Especie</label>
+        <input type="Text" name="especie"></input>
+        <label>Data de Nascimento</label>
+        <input placeholder="dd/mm/yy" type="date" max="2003-01-01" name="dataPet"></input>
+        <label>Raça</label>
+        <input type="Text" placeholder="Insira a raça" name="raca"></input>
+        <label>Pelo</label>
+        <input type="Text" placeholder="Insira informações do pelo" name="pelo"></input>
+        <label>Cor</label>
+        <input type="Text" placeholder="Insira a cor" name="cor"></input>
+        <label>Função</label>
+        <select name="tamanhoPet">
+          <option disabled selected hidden>Selecione o porte</option>
+          <option value="Pequeno">Pequeno</option>
+          <option value="Médio">Médio</option>
+          <option value="Médio">Grande</option>
+        </select>
+        <input type="button" value="CADASTRAR" onclick="cadastrarPet()"></input>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
