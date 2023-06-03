@@ -28,7 +28,7 @@ function login() {
             //document.body.appendChild(paragrafo);
 
             // Redirecionar para a página de agendamentos
-            window.location.href = 'pagina_agendamentos.html';
+            window.location.href = 'cadastroPet.html';
 
             loginSucesso = true;
 
