@@ -1,0 +1,141 @@
+#cabecalho
+{
+	background-color: #121212;
+	padding: 20px;
+	text-align: center;
+}
+body
+{
+		background-color: #e3e2e1;
+		margin: 0;
+		height: 100%;
+		width: 100%;
+}
+.menu
+{
+	
+}
+a.menu
+{
+	text-decoration: none;
+	color: white;
+	margin: 5px;
+	
+}
+a.menu:hover
+	{
+		background: green;
+	}
+.conteudo
+{
+	/*
+	border-style: solid;
+	border-width: 10px;
+	border-color: red;
+	
+	margin-left: 9%;
+	text-align: center;
+	width: 80%;
+	background-color: #d4d2d2;
+	font-size:20px;
+
+*/
+	display: grid;
+	grid-template-columns: 50fr 50fr;
+	grid-template-rows: 50fr 50fr;
+	grid-template-areas: "a b" "a c";
+	background-color: #545454;
+	max-height: 1050px;
+}
+.conteudo2
+{
+	background-image: url(https://www.jdinformaticatx.com.br/tim.php?src=uploads/images/2020/06/manutencao-em-computadores-de-mesa-desktops-1591625141.jpg&w=1600&h=727.27272727273);
+	background-size: cover;
+	display: grid;
+	background-attachment: fixed;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 2fr 1fr;
+	grid-area: 'a b c' 'd e f';
+	max-width: 1920px;
+	max-height: 1080px;
+	
+
+}
+
+.conteudo3
+{
+	background-image: url(https://plus.diolinux.com.br/uploads/default/original/3X/1/6/16302d5b0ab0ca57767b3acc6bba95a7d8a9ad78.jpeg);
+	background-size: cover;
+	display: grid;
+	/*background-attachment: fixed;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 2fr 1fr;
+	grid-area: 'a a b' 'd e f';*/
+	min-width: 1920px;
+	min-height: 1080px;
+	
+
+}
+
+.rounded
+{
+	border-radius: 50%;
+	width: 300px;
+	min-width: 300px;
+	max-width: 310px;
+	box-shadow: 10px 10px;
+}
+
+.rounded-card
+{
+	text-align: center;
+	margin-top: 5%;
+
+}
+
+.rounded:hover
+{
+	width: 310px;
+}
+
+.contact
+{
+	background-color: #545454;
+	display: inline;
+	border-radius: 5%;
+	max-width: 70%;
+	max-height: 30%;
+	margin: 05%;
+
+}
+
+.p
+{
+	display: inline;
+	font-size: 500%;
+	margin: 20% 	;
+}
+.imagem{
+	border-radius: 5%;
+	max-width: 60%;
+	max-height: 85%;
+	grid-area: a;
+	margin: 10%;
+	box-shadow: 10px 10px 20px black;
+	
+}
+.texto
+{
+	margin: 10%;
+	grid-area: b;
+	color: white;
+	white-space: pre-wrap;
+	text-align: justify;
+	max-width: 70%;
+}
+p
+{
+color: white;
+text-shadow: 2px 2px 3px black; 
+font-size: 20px; font-family: Arial, sans-serif;	
+}		
