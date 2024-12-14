@@ -1,7 +1,7 @@
 import { Grid, GridItem } from "@chakra-ui/react";
 import imagem1 from "../../img/How_to_improve_hardware_security.jpg"
 import imagem2 from "../../img/10913908.jpg"
-import { Children } from "react";
+
 
 interface Props{
     children: React.ReactElement
@@ -20,7 +20,7 @@ const {children} = props
                 width="100vw" // Define o grid para ocupar toda a largura da viewport
               >
                 <GridItem
-                  backgroundImage={`url(${imagem1})`} // Aplica a imagem de fundo
+                  backgroundColor="#1c1c1c" // Aplica a imagem de fundo
                   backgroundAttachment="fixed" // Torna a imagem fixa ao rolar
                   backgroundSize="cover" // Faz a imagem cobrir todo o espaço
                   backgroundPosition="center" // Centraliza a imagem
@@ -30,16 +30,7 @@ const {children} = props
                     {children}
 
                 </GridItem>
-                <GridItem
-                  backgroundImage={`url(${imagem2})`} // Aplica a imagem de fundo
-                  backgroundAttachment="fixed" // Torna a imagem fixa ao rolar
-                  backgroundSize="cover" // Faz a imagem cobrir todo o espaço
-                  backgroundPosition="center" // Centraliza a imagem
-                  height="100vh" // Define o grid para ocupar toda a altura da viewport
-                  width="100vw" // Define o grid para ocupar toda a largura da viewport
-                >
-                 <p>olá</p>
-                </GridItem>
+                
               </Grid>
             </>
     )

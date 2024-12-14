@@ -73,7 +73,7 @@ function alterarStatus(tarefa: Tarefa)
             {tarefas.map((tarefa)=>(
                 <li key={tarefa.id}>
                     {tarefa.title}
-                    <Button bg={tarefa.title ? 'green':'orange'} size='xs' ml={4} onClick={()=>{alterarStatus(tarefa)}}> {tarefa.completed ? 'Realizda' : 'Pendente'}</Button>
+                    <Button bg={tarefa.completed ? 'green':'orange'} size='xs' ml={4} onClick={()=>{alterarStatus(tarefa)}}> {tarefa.completed ? 'Realizda' : 'Pendente'}</Button>
                     <Button bg={'red'} size='xs' ml={4} onClick={()=>{apagarTarefa(tarefa.id)}}>Excluir</Button>
                 </li>
 
